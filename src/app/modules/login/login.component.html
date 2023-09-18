@@ -1,20 +1,29 @@
 <form [formGroup]="myform" (ngSubmit)="submitForm()" >
   <div class="form-group">
-    <img src="assets/logo.webp" alt="no hay imagen">
+    <img src="assets/logoJF.png" alt="no hay imagen">
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">User</label>
-    <input formControlName="usuario" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter User" [class.is-invalid]="f.usuario.errors && f.usuario.touched">
-    <div id="validationServerUsernameFeedback" class="invalid-feedback">
-      Usuario Obligatorio.
+    <div class="div-label">
+      <label for="exampleInputEmail1" class="col-form-label text-white">User: </label>
+    </div>
+    <div class="div-input">
+      <input formControlName="usuario" type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter User" [class.is-invalid]="f.usuario.errors && f.usuario.touched">
+      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        Usuario Obligatorio.
+      </div>
     </div>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" [class.is-invalid]="f.password.errors && f.password.touched">
-    <div id="validationServerUsernameFeedback" class="invalid-feedback">
-      Contraseña Obligatoria.
+    <label for="exampleInputPassword1" class="col-form-label text-white">Password: </label>
+    <div class="div-input">
+      <input formControlName="password" type="password" class="form-control justify-content-center" id="exampleInputPassword1" placeholder="Enter Password" [class.is-invalid]="f.password.errors && f.password.touched">
+      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        Contraseña Obligatoria.
+      </div>
     </div>
+    
   </div>
-  <button class="btn btn-success">Submit</button>
+  <div class="center">
+    <button class="btn btn-primary">Ingresar</button>
+  </div>
 </form>

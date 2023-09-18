@@ -7,12 +7,18 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './modules/login/login.component';
 import { HeaderFooterComponent } from './modules/header-footer/header-footer.component';
+import { SidebarComponent } from './modules/sidebar/sidebar.component';
+import { SubmenuComponent } from './modules/sidebar/submenu/submenu.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HeaderFooterComponent
+    HeaderFooterComponent,
+    SidebarComponent,
+    SubmenuComponent,
+    
   ],
   imports: [
     BrowserModule,

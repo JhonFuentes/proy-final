@@ -1,13 +1,48 @@
-header{
-    background-color: aqua;
-    height: 80px;
+
+.main{
+    display: flex;
 }
-.menu{
-    background-color: blanchedalmond;
-    width: 40%;
-    height: 80%;
+
+.sidebar{
+    height: 95vh;
+    width:20%;
+}
+div{
+    border: 1px;
+    border-color: aliceblue;
 }
 footer{
-    background-color: red;
-    height: 80px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+footer div{
+    margin: 5px;
+}
+.webname{
+    color: rgb(13, 162, 248);
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float:left ;
+}
+.userconect{
+    float: left;
+}
+/*
+.sidebar {
+    width: 200px;
+    height: 95vh;
+    background-color: #333;
+    color: #fff;
+    float: left;
+  }
+  
+  .submenu {
+    display: none;
+    background-color: #444;
+  }*/
+  
+  .active .submenu {
+    display: block;
+  }

@@ -6,10 +6,11 @@ import { HeaderFooterComponent } from './modules/header-footer/header-footer.com
 
 const routes: Routes = [
   {path:'', redirectTo:'/app/login', pathMatch:'full'},
+  
   {path:'app',component:AppComponent,children:[
     {path:'login',component:LoginComponent},
     {path:'principal',component:HeaderFooterComponent}
-  ]}
+  ]},
   //{path:'login',component:LoginComponent}
 ];
 

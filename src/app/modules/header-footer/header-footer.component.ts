@@ -8,9 +8,14 @@ import { AutenticacionService } from '../../services/autenticacion.service';
 })
 export class HeaderFooterComponent implements OnInit{
 
-  constructor(){}
-
+  
+  constructor(){
+  }
+  
   ngOnInit(): void {
       
   }
+
+  //fechaActual: Date = new Date();
+  fechaLiteral: string = new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 }

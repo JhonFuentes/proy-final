@@ -1,0 +1,10 @@
+<div class="sidebar">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li (click)="toggleSubmenu()">Submenu</li>
+      <li [ngClass]="{ 'active': submenuVisible }">
+        <app-submenu *ngIf="submenuVisible"></app-submenu>
+      </li>
+    </ul>
+</div>
+  
